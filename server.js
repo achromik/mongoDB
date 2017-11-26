@@ -1,14 +1,10 @@
-http.createServer(onRequest).listen(process.env.PORT || 6000)
-
-
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-
+ 
 mongoose.Promise = global.Promise;
 mongoose.connect('mongodb://admin:databaseqwerty@ds119736.mlab.com:19736/first_database', {
     useMongoClient: true
 });
-
 
 //new user Schema
 const userSchema = new Schema({
