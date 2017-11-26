@@ -6,6 +6,7 @@ mongoose.connect('mongodb://admin:databaseqwerty@ds119736.mlab.com:19736/first_d
     useMongoClient: true
 });
 
+
 //new user Schema
 const userSchema = new Schema({
     name: String,
