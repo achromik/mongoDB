@@ -1,3 +1,6 @@
+http.createServer(onRequest).listen(process.env.PORT || 6000)
+
+
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
